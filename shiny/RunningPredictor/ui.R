@@ -12,8 +12,8 @@ shinyUI(pageWithSidebar(
             tags$ul(
                 tags$li(tags$b("Race distance:"), "The distance for the race you want to predict the finishing time, in miles."),
                 tags$li(tags$b("Years for training:"), "The training data set used to build the model has data for the past 4 years, but you can restrict it to the most recent results, as it will give a better indication of the estimated time."),
-                tags$li(tags$b("Expected effort:"), "Some races are harder than others, due to factors like elevation or climate. You can use this option to better predict how you will finish in your race."),
-                tags$li(tags$b("Training pace:"), "There are some training runs where you run in a higher or lower pace than the expected effort; you can use this option to limit the runs used in the training to only those within a certain page range.")
+                tags$li(tags$b("Course difficulty:"), "Some races are harder than others, due to factors like elevation or climate. You can use this option to better predict how you will finish in your race."),
+                tags$li(tags$b("Training pace:"), "There are some training runs where you run in a higher or lower pace than the expected effort; you can use this option to limit the runs used in the training to only those within a certain pace range.")
             )
         ),
         sliderInput("raceDistance", "Select the distance for next race (miles)",
